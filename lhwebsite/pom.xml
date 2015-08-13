@@ -34,6 +34,12 @@
             <version>${springVersion}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${springVersion}</version>
+        </dependency>
+
         <!-- 日志组件 -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -41,6 +47,17 @@
             <version>1.1.2</version>
         </dependency>
 
+        <!-- freemarker view resolver-->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.20</version>
+        </dependency>
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
 
     </dependencies>
 

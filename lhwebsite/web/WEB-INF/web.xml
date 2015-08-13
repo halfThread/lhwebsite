@@ -12,36 +12,36 @@
     </description>
 
     <!-- 1、springIOC容器初始化的配置文件 -->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>
-            classpath*:spring-context.xml
-            <!--,classpath*:spring-security.xml-->
-        </param-value>
-    </context-param>
+    <!--<context-param>-->
+        <!--<param-name>contextConfigLocation</param-name>-->
+        <!--<param-value>-->
+            <!--classpath*:spring-context.xml-->
+            <!--&lt;!&ndash;,classpath*:spring-security.xml&ndash;&gt;-->
+        <!--</param-value>-->
+    <!--</context-param>-->
 
     <!-- 2、容器初始化加载器 -->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+    <!--</listener>-->
 
     <!-- 3.1、设置字符集拦截器 -->
-    <filter>
-        <filter-name>setcharacter</filter-name>
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>utf-8</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>setcharacter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--<filter>-->
+        <!--<filter-name>setcharacter</filter-name>-->
+        <!--<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>-->
+        <!--<init-param>-->
+            <!--<param-name>encoding</param-name>-->
+            <!--<param-value>utf-8</param-value>-->
+        <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>setcharacter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
     <!-- 4、springmvc dispatcherServlet -->
     <servlet>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>lhwebsite</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -51,13 +51,13 @@
     </servlet>
     <!-- 注意与/*的区别：/*会拦截所有的url请求 -->
     <servlet-mapping>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>lhwebsite</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <!-- 5、welcome pages -->
-    <welcome-file-list>
-        <welcome-file>index.jsp,index.ftl</welcome-file>
-    </welcome-file-list>
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>index.jsp,index.ftl</welcome-file>-->
+    <!--</welcome-file-list>-->
 
 </web-app>
