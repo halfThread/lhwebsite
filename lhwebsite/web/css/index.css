@@ -1,0 +1,35 @@
+/*
+edit by liuhuan 2015/8/13
+*/
+body{
+    background-color: #8b8e90;
+}
+
+/* 头部 logo */
+#header{
+    width: 100%;
+    background-color: #2c2c2c;
+}
+#header-logo{
+    height: 80px;
+    margin: 0px auto;
+}
+
+.header-welcome{
+    color: #8b8e90;
+}
+
+#header-search{
+    padding-top: 20px;
+    height: 80px;
+}
+
+#header-search-text{
+    background-color: #7b7e80;
+}
+
+#header-login{
+    padding-top:25px;
+    color: #f4fafe;
+    height: 80px;
+}
