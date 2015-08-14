@@ -1,35 +1,54 @@
 /*
-edit by liuhuan 2015/8/13
+Edit by liuhuan 2015-8-14 15:05:34
 */
-body{
-    background-color: #8b8e90;
-}
 
-/* 头部 logo */
-#header{
+/*头部*/
+#header {
     width: 100%;
-    background-color: #2c2c2c;
-}
-#header-logo{
-    height: 80px;
-    margin: 0px auto;
+    text-align: center;
 }
 
-.header-welcome{
-    color: #8b8e90;
+#header .navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
-#header-search{
-    padding-top: 20px;
-    height: 80px;
+#header .navbar-brand {
+    width: 250px;
 }
 
-#header-search-text{
-    background-color: #7b7e80;
+#header-nav-list li{
+    width:120px;
 }
 
-#header-login{
-    padding-top:25px;
-    color: #f4fafe;
-    height: 80px;
+#header-search {
+    width: 300px;
+}
+/*头部信息展示*/
+#header-show {
+    height: 220px;
+    background-color: #242424;
+}
+
+#header-show div{
+    float: left;
+    height: 100%;
+}
+
+#header-show div img{
+    width: 130px;
+    height: 140px;
+    margin-top: 30px;
+}
+
+#header-show div ul{
+    color: #bababa;
+    list-style-type: none;
+    padding-top: 50px;
+    padding-left: 0px;
+}
+
+#header-show div ul li{
+    text-align: left;
+    height: 30px;
 }
