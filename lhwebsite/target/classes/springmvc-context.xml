@@ -20,6 +20,10 @@
         spring MVC 主配置 For MVC Dispatcher
     </description>
 
+    <mvc:resources mapping="/css/**" location="/css/" />
+    <mvc:resources mapping="/fonts/**" location="/font/" />
+    <mvc:resources mapping="/images/**" location="/images/" />
+    <mvc:resources mapping="/js/**" location="/js/" />
     <!-- 加载注解扫描 -->
     <mvc:annotation-driven />
     <!--加载包扫描会默认加载注解扫描 -->
@@ -32,7 +36,7 @@
     </bean>
 
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="order" value="2"/>
+        <property name="order" value="0"/>
         <property name="suffix" value=".ftl" />
         <property name="contentType" value="text/html;charset=utf-8" />
         <property name="requestContextAttribute" value="rc" />

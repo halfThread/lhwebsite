@@ -15,7 +15,7 @@ public class IndexController {
 
     @RequestMapping("")
     public String index(){
-        logger.info("Hello world. This is my first website!");
+        logger.error("=================");
         return "index";
     }
 

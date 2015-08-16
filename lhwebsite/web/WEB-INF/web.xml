@@ -49,7 +49,6 @@
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <!-- 注意与/*的区别：/*会拦截所有的url请求 -->
     <servlet-mapping>
         <servlet-name>lhwebsite</servlet-name>
         <url-pattern>/</url-pattern>
