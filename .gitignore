@@ -11,5 +11,11 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-.idea
-out
+lhwebsite/.idea
+lhwebsite/lhwebsite.iml
+!lhwebsite/lhweb-dao
+!lhwebsite/lhweb-service
+!lhwebsite/lhwebadmin
+!lhwebsite/lhwebblog
+!lhwebsite/pom.xml
+!lhwebsite/src

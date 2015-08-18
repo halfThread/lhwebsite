@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/lhweb-dao/lhweb-dao.iml" filepath="$PROJECT_DIR$/lhweb-dao/lhweb-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lhweb-service/lhweb-service.iml" filepath="$PROJECT_DIR$/lhweb-service/lhweb-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lhwebadmin/lhwebadmin.iml" filepath="$PROJECT_DIR$/lhwebadmin/lhwebadmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lhwebblog/lhwebblog.iml" filepath="$PROJECT_DIR$/lhwebblog/lhwebblog.iml" />
       <module fileurl="file://$PROJECT_DIR$/lhwebsite.iml" filepath="$PROJECT_DIR$/lhwebsite.iml" />
     </modules>
   </component>
