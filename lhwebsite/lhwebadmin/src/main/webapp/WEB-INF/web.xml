@@ -1,7 +1,60 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <description>
+        web.xml结点加载顺序：
+        context-param -> listener -> filter -> servlet -> spring
+        和写在哪的先后顺序无关，但同结点的存在先后
+        Mapping需紧跟它的相关结点定义
+    </description>
+
+    <!-- 1、springIOC容器初始化的配置文件 -->
+    <!--<context-param>-->
+    <!--<param-name>contextConfigLocation</param-name>-->
+    <!--<param-value>-->
+    <!--classpath*:spring-context.xml-->
+    <!--&lt;!&ndash;,classpath*:spring-security.xml&ndash;&gt;-->
+    <!--</param-value>-->
+    <!--</context-param>-->
+
+    <!-- 2、容器初始化加载器 -->
+    <!--<listener>-->
+    <!--<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+    <!--</listener>-->
+
+    <!-- 3.1、设置字符集拦截器 -->
+    <!--<filter>-->
+    <!--<filter-name>setcharacter</filter-name>-->
+    <!--<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>-->
+    <!--<init-param>-->
+    <!--<param-name>encoding</param-name>-->
+    <!--<param-value>utf-8</param-value>-->
+    <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+    <!--<filter-name>setcharacter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
+
+    <!-- 4、springmvc dispatcherServlet -->
+    <servlet>
+        <servlet-name>lhwebadmin</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath*:springmvc-context.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lhwebadmin</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <!-- 5、welcome pages -->
+    <!--<welcome-file-list>-->
+    <!--<welcome-file>index.jsp,index.ftl</welcome-file>-->
+    <!--</welcome-file-list>-->
 </web-app>
